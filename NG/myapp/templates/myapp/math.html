@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>rectangle area calculator</title>
+        </head>
+        <body bgcolor="lime">
+            <h1 align="center">CALCULATOR</h1>
+            <h2 align="center">NANDAGOPAL K K</h2>
+            <h3 align="center">26017428</h3>
+            <form method="POST">
+            {%csrf_token %}<br><br>
+                
+
+       <B> <label>INITIAL CUSTOMER=</label></B>
+        <input type="number" name="initial_cust" value="{{l}}" ><br><br>
+        <B><label>PRESENT CUSTOMER=</label></B>
+        <input type="number" name="present_cust" value="{{i}}" ><br><br>
+        <B><input type="submit" value="Calculate"><br><br></B>
+        <B><label>CHURN RATE=</label></B>
+        <input type="number" value="{{churnrate}}"><br><br>
+
+            
+        </body>
+
